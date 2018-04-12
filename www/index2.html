@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<div id="data" style="align-content: :center  ">
+	
+	<img src="patineta.jpg">
+</div>
+
+
+
+<script type="text/javascript">
+	function processform()
+	{
+		var parameter = location.search.substring(1).split("&");
+		var temp = parameter[0].split("=");
+		x = unescape(temp[1]);
+
+		l= "  hola "  +x+  "  Bienvenid(@) a phonegap" ;
+
+
+		document.getElementById("data").innerHTML = l ;
+	}
+processform();
+</script>
+
+
+
+</body>
+</html>
